@@ -1,0 +1,18 @@
+
+*{
+    box-sizing: border-box;
+}
+header{
+    font-size: 1.4rem;
+}
+.header-icons{
+    margin-right: 1rem;
+}
+
+header form{
+    margin-right: 2rem;
+}
+header form input{
+    background: url(img/Frame\ 44\ \(1\).svg) no-repeat scroll 70% 7px;
+}
+
