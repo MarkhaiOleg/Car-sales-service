@@ -59,6 +59,7 @@ header form input{
     font-size: 1rem;
 }
 /*HISTORY*/
+
 .history .row{
     background-color: #FEC80B;
 }
@@ -81,8 +82,6 @@ header form input{
 .categories{
     margin: 5rem 0 5rem 3rem;
 }
- 
-
 
 .categories h2{
     margin: 1rem 0 3rem 0;
@@ -111,3 +110,40 @@ header form input{
 }
 
 
+/*info*/
+
+.info-main-content{
+    padding: 5rem;
+}
+
+.info-main-content h2{
+ font-size: 3rem;
+}
+
+.info-main-content span{
+    color: #FEC80B;
+}
+
+.info-main-content p{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.info-main-content button{
+    width: 13rem;
+    height: 3rem;
+    margin: 0 1rem 1rem 0;
+    color: #000;
+    background: none;
+    border: 2px solid #FEC80B;
+    border-radius: 4px;
+}
+
+.info-main-content button:hover{
+    background-color: #FEC80B;
+    border: 2px solid #000;
+}
+
+.info-img{
+    padding: 5rem 7rem 5rem 5rem;
+}
