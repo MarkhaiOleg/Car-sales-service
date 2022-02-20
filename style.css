@@ -1,7 +1,14 @@
 
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+body{
+    font-size: 2vh;
+}
+
 header{
     font-size: 1.4rem;
 }
@@ -16,3 +23,55 @@ header form input{
     background: url(img/Frame\ 44\ \(1\).svg) no-repeat scroll 70% 7px;
 }
 
+
+/*SECTION1*/
+
+.section-1{
+    color: #fff;
+    background: url(img/section-1bc.png) no-repeat;
+}
+
+.section-1-main-content{
+  width: 40%;
+  padding: 5% 0 5% 5%;
+}
+
+.section-1 h2{
+ font-size: 2.5rem;
+}
+
+.section-1 button{
+    width: 13rem;
+    height: 3rem;
+    margin-right: 1rem;
+    color: #fff;
+    background: none;
+    border: 2px solid #FEC80B;
+    border-radius: 4px;
+}
+
+.section-1 button:hover{
+    color: #000;
+    background-color: #FEC80B;
+}
+
+.section-1 p{
+    font-size: 1rem;
+}
+/*HISTORY*/
+.history .row{
+    background-color: #FEC80B;
+}
+
+.history .col{
+    padding: 4rem;
+}
+
+.history .col span{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.history .col p{
+    font-size: 1.2rem;
+}
