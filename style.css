@@ -43,7 +43,7 @@ header form input{
 .section-1 button{
     width: 13rem;
     height: 3rem;
-    margin-right: 1rem;
+    margin: 0 1rem 1rem 0;
     color: #fff;
     background: none;
     border: 2px solid #FEC80B;
