@@ -1,401 +1,452 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Track</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Track</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="img/logo!.svg" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-links">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo!.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-links">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          О нас
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Действие</a></li>
-                          <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                        </ul>
-                      </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                О нас
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Действие</a></li>
+                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+              </ul>
+            </li>
 
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Медиа
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Действие</a></li>
-                          <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item text-dark" href="#">Что-то еще здесь</a></li>
-                        </ul>
-                      </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Медиа
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Действие</a></li>
+                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-dark" href="#">Что-то еще здесь</a></li>
+              </ul>
+            </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Сервис</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link text-dark">Новости</a>
-                  </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Сервис</a>
+            </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link text-dark">Контакты</a>
-                  </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark">Новости</a>
+            </li>
 
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
-                  <button class="btn btn-outline-success text-dark" type="submit">Поиск</button>
-                </form>
+            <li class="nav-item">
+              <a class="nav-link text-dark">Контакты</a>
+            </li>
 
-                <a href="" class="header-icons"><img src="img/basket.svg" alt=""></a>
-                <a href="" class="header-icons"><img src="img/heart.svg" alt=""></a>
-                <a href=""><img src="img/phone.svg" alt=""></a>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+            <button class="btn btn-outline-success text-dark" type="submit">Поиск</button>
+          </form>
 
-              </div>
-            </div>
-          </nav>
-         
-    </header>
+          <a href="" class="header-icons"><img src="img/basket.svg" alt=""></a>
+          <a href="" class="header-icons"><img src="img/heart.svg" alt=""></a>
+          <a href=""><img src="img/phone.svg" alt=""></a>
 
-    <section class="section-1">
-      <div class="row section-1-main-content">
-        <div class="col">
-          <h2>Завод-производитель автоспецтехники</h2>
-          <p>ООО «РусТрак» — это компания, занимающаяся производством и поставкой специализированной техники и спецтранспорта</p>
-          <div> 
-            <button>Открыть каталог</button>
-            <button>Заказать звонок</button>
-          </div>
         </div>
       </div>
-    </section>
+    </nav>
+
+  </header>
+
+  <section class="section-1">
+    <div class="row section-1-main-content">
+      <div class="col">
+        <h2>Завод-производитель автоспецтехники</h2>
+        <p>ООО «РусТрак» — это компания, занимающаяся производством и поставкой специализированной техники и
+          спецтранспорта</p>
+        <div>
+          <button>Открыть каталог</button>
+          <button>Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-    <section class="categories">
-      <div class="rov">
-        <div class="col d-flex flex-row justify-content-center">
-         <h2>Категории</h2>
+  <section class="categories">
+    <div class="rov">
+      <div class="col d-flex flex-row justify-content-center">
+        <h2>Категорії</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <p class="card-text">Автофургони</p>
+          <p class="card-text-sm">27 моделей</p>
+          <a href=""><img src="img/car.png" class="card-img-top" alt="..."></a>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <p class="card-text">Автофургоны</p>
-            <p class="card-text-sm">27 моделей</p>
-            <a href=""><img src="img/car.png" class="card-img-top" alt="..."></a>
-          </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <p class="card-text">Автофургони</p>
+          <p class="card-text-sm">27 моделей</p>
+          <a href=""><img src="img/car.png" class="card-img-top" alt="..."></a>
+        </div>
       </div>
 
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <p class="card-text">Автофургоны</p>
-            <p class="card-text-sm">27 моделей</p>
-            <a href=""><img src="img/car.png" class="card-img-top" alt="..."></a>
-          </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <p class="card-text">Автофургони</p>
+          <p class="card-text-sm">27 моделей</p>
+          <a href=""><img src="img/car.png" class="card-img-top" alt="..."></a>
         </div>
-
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <p class="card-text">Автофургоны</p>
-            <p class="card-text-sm">27 моделей</p>
-            <a href=""><img src="img/car.png" class="card-img-top" alt="..."></a>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <p class="card-text">Автофургоны</p>
-            <p class="card-text-sm">27 моделей</p>
-            <a href=""><img src="img/car.png" class="card-img-top" alt="..."></a>
-          </div>
-        </div>
-
-        </div>
-        
       </div>
-    </section>
-    <sectiom class="history">
-     <div class="row">
-         <div class="col">
-           <h2><span>5</span> <br> лет</h2>
-           <p>За 5 лет своей деятельности ООО «РусТрак» превратилось в крупное предприятие по производству и продаже специальной техники</p>
-          </div>
 
-         <div class="col">
-           <h2><span>95</span> <br> субьектов</h2>
-           <p>Мы обеспечили 95 субъектов РФ надежной техникой коммерческого и специализированного предназначения</p>
-          </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <p class="card-text">Автофургони</p>
+          <p class="card-text-sm">27 моделей</p>
+          <a href=""><img src="img/car.png" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
 
-         <div class="col">
-           <h2><span>10</span> <br> концернов</h2>
-           <p>ООО «РусТрак» дорожит доверием автопрома, которое подтверждено дилерскими полномочиями от 10 лидирующих концернов</p>
-          </div>
-         
-     </div>
-    </sectiom>
+    </div>
 
-    <section class="info">
-      <div class="row">
-        <div class="col info-main-content">
-        <h2>О компании <span>Рустрак</span></h2>
+    </div>
+  </section>
+  <sectiom class="history">
+    <div class="row">
+      <div class="col">
+        <h2><span>5</span> <br> лет</h2>
+        <p>За 5 лет своей деятельности ООО «РусТрак» превратилось в крупное предприятие по производству и продаже
+          специальной техники</p>
+      </div>
+
+      <div class="col">
+        <h2><span>95</span> <br> субьектов</h2>
+        <p>Мы обеспечили 95 субъектов РФ надежной техникой коммерческого и специализированного предназначения</p>
+      </div>
+
+      <div class="col">
+        <h2><span>10</span> <br> концернов</h2>
+        <p>ООО «РусТрак» дорожит доверием автопрома, которое подтверждено дилерскими полномочиями от 10 лидирующих
+          концернов</p>
+      </div>
+
+    </div>
+  </sectiom>
+
+  <section class="info">
+    <div class="row">
+      <div class="col info-main-content">
+        <h2>Про компанію <span>Рустрак</span></h2>
         <p>
-          Наша компания не случайно занимает лидирующие позиции на рынке спецтехники: каждый день мы вносим свой вклад в развитие отечественного автопрома и укрепление российской экономики.
+          Наша компанія не випадково займає лідируючі позиції на ринку спецтехніки: щодня ми вносимо свій внесок у
+          розвиток вітчизняного автопрому та зміцнення російської економіки.
           <br>
           <br>
-          Наша компания снискала признание среди крупнейших отечественных корпораций и государственных структур, став поставщиком спецтехники для таких гигантов, как Газпром, Росатом, Россети, РСК «МИГ» и других.
+          Наша компанія здобула визнання серед найбільших вітчизняних корпорацій та державних структур, ставши
+          постачальником спецтехніки для таких гігантів, як Газпром, Росатом, Россети, РСК «МІГ» та інших.
         </p>
         <button>Подробнее <img src="img/arrowright.svg" alt=""></button>
-        </div>
-
-        <div class="col info-img">
-          <img src="img/white-trucks 2.png" class="img-fluid" alt="">
-        </div>
       </div>
-    </section>
 
-    <section class="recommendation">
-      
-        <div class="row">
-          <div class="col d-flex justify-content-center">
-            <h3>
-              Продукція, що рекомендується
-            </h3>
-          </div>
-        </div>
-        
-        <div class="row d-flex flex-row justify-content-center">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+      <div class="col info-img">
+        <img src="img/white-trucks 2.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </section>
 
-              <div class="d-flex flex-row justify-content-between">
-                <div class="special-offer">
-                  <p>В наявності</p>
-                </div>
-                <div class="recommendation-heart">
-                  <a href=""><img src="img/heart.svg" alt=""></a>
-                </div>
-              </div>
+  <section class="recommendation">
 
-              <img src="img/image 28.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">HYUNDAI HD 78 з промтоварним фургоном</h5>
-                <p class="card-text">від 352 000₽</p>
-                <div class="d-flex flex-row justify-content-evenly">
-                  <button>Открыть каталог</button>
-                  <div class="loading d-flex flex-row justify-content-center">
-                    <a href="" style="padding-left: 1rem; width: 8rem;">Отримати КП</a>
-                    <a href=""><img src="img/loading.svg" alt=""></a>
-                  </div>
-                 
-                </div>
-              </div>
+    <div class="row">
+      <div class="col d-flex flex-row justify-content-center">
+        <h3>
+          Продукція
+        </h3>
+      </div>
+    </div>
+
+    <div class="row d-flex flex-row justify-content-center">
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+
+          <div class="d-flex flex-row justify-content-between">
+            <div class="special-offer">
+              <p>В наявності</p>
+            </div>
+            <div class="recommendation-heart">
+              <a href=""><img src="img/heart.svg" alt=""></a>
             </div>
           </div>
 
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-
-              <div class="d-flex flex-row justify-content-between">
-                <div class="special-offer">
-                  <p>В наявності</p>
-                </div>
-                <div class="recommendation-heart">
-                  <a href=""><img src="img/heart.svg" alt=""></a>
-                </div>
+          <img src="img/image 28.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HYUNDAI HD 78 з промтоварним фургоном</h5>
+            <p class="card-text">від 352 000₽</p>
+            <div class="d-flex flex-row justify-content-evenly">
+              <button>Открыть каталог</button>
+              <div class="loading d-flex flex-row justify-content-center">
+                <a href="" style="padding-left: 1rem; width: 8rem;">Отримати КП</a>
+                <a href=""><img src="img/loading.svg" alt=""></a>
               </div>
 
-              <img src="img/image 28.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">HYUNDAI HD 78 з промтоварним фургоном</h5>
-                <p class="card-text">від 352 000₽</p>
-                <div class="d-flex flex-row justify-content-evenly">
-                  <button>Открыть каталог</button>
-                  <div class="loading d-flex flex-row justify-content-center">
-                    <a href="" style="padding-left: 1rem; width: 8rem;">Отримати КП</a>
-                    <a href=""><img src="img/loading.svg" alt=""></a>
-                  </div>
-                 
-                </div>
-              </div>
             </div>
           </div>
-
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-
-              <div class="d-flex flex-row justify-content-between">
-                <div class="special-offer">
-                  <p>В наявності</p>
-                </div>
-                <div class="recommendation-heart">
-                  <a href=""><img src="img/heart.svg" alt=""></a>
-                </div>
-              </div>
-
-              <img src="img/image 28.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">HYUNDAI HD 78 з промтоварним фургоном</h5>
-                <p class="card-text">від 352 000₽</p>
-                <div class="d-flex flex-row justify-content-evenly">
-                  <button>Открыть каталог</button>
-                  <div class="loading d-flex flex-row justify-content-center">
-                    <a href="" style="padding-left: 1rem; width: 8rem;">Отримати КП</a>
-                    <a href=""><img src="img/loading.svg" alt=""></a>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-
-              <div class="d-flex flex-row justify-content-between">
-                <div class="special-offer">
-                  <p>В наявності</p>
-                </div>
-                <div class="recommendation-heart">
-                  <a href=""><img src="img/heart.svg" alt=""></a>
-                </div>
-              </div>
-
-              <img src="img/image 28.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">HYUNDAI HD 78 з промтоварним фургоном</h5>
-                <p class="card-text">від 352 000₽</p>
-                <div class="d-flex flex-row justify-content-evenly">
-                  <button>Открыть каталог</button>
-                  <div class="loading d-flex flex-row justify-content-center">
-                    <a href="" style="padding-left: 1rem; width: 8rem;">Отримати КП</a>
-                    <a href=""><img src="img/loading.svg" alt=""></a>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-    </section>
-
-    <section class="news">
-      <div class="row">
-        <div class="col d-flex flex-row justify-content-center">
-          <h3>Новини</h3>
         </div>
       </div>
 
-      <div class="row d-flex flex-row justify-content-center">
-        
-        <div class="col">
-          <div class="card" style="width: 18rem;">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
 
-            
-            <img src="img/newsPicture.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title">15.06.2021</p>
-              <p class="card-text">КАМАЗ готує конкурента ГАЗелі та Валдая (перші ФОТО)</p>
-                
-                <div class="loading d-flex flex-row justify-content-center">
-                  <a href="" style="padding-left: 1rem; width: 8rem;">Детальніше</a>
-                  <a href=""><img src="img/arrowright.svg" alt=""></a>
-                </div>
-               
+          <div class="d-flex flex-row justify-content-between">
+            <div class="special-offer">
+              <p>В наявності</p>
+            </div>
+            <div class="recommendation-heart">
+              <a href=""><img src="img/heart.svg" alt=""></a>
             </div>
           </div>
+
+          <img src="img/image 28.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HYUNDAI HD 78 з промтоварним фургоном</h5>
+            <p class="card-text">від 352 000₽</p>
+            <div class="d-flex flex-row justify-content-evenly">
+              <button>Открыть каталог</button>
+              <div class="loading d-flex flex-row justify-content-center">
+                <a href="" style="padding-left: 1rem; width: 8rem;">Отримати КП</a>
+                <a href=""><img src="img/loading.svg" alt=""></a>
+              </div>
+
+            </div>
           </div>
-        
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-  
-              
-              <img src="img/newsPicture.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-title">15.06.2021</p>
-                <p class="card-text">КАМАЗ готує конкурента ГАЗелі та Валдая (перші ФОТО)</p>
-                  
-                  <div class="loading d-flex flex-row justify-content-center">
-                    <a href="" style="padding-left: 1rem; width: 8rem;">Детальніше</a>
-                    <a href=""><img src="img/arrowright.svg" alt=""></a>
-                  </div>
-                 
-              </div>
-            </div>
-            </div>
-        
-            
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-    
-                
-                <img src="img/newsPicture.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-title">15.06.2021</p>
-                  <p class="card-text">КАМАЗ готує конкурента ГАЗелі та Валдая (перші ФОТО)</p>
-                    
-                    <div class="loading d-flex flex-row justify-content-center">
-                      <a href="" style="padding-left: 1rem; width: 8rem;">Детальніше</a>
-                      <a href=""><img src="img/arrowright.svg" alt=""></a>
-                    </div>
-                   
-                </div>
-              </div>
-              </div>
-        
-              
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-      
-                  
-                  <img src="img/newsPicture.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">15.06.2021</p>
-                    <p class="card-text">КАМАЗ готує конкурента ГАЗелі та Валдая (перші ФОТО)</p>
-                      
-                      <div class="loading d-flex flex-row justify-content-center">
-                        <a href="" style="padding-left: 1rem; width: 8rem;">Детальніше</a>
-                        <a href=""><img src="img/arrowright.svg" alt=""></a>
-                      </div>
-                     
-                  </div>
-               </div>
-               </div>
-              
-
-
-      </div>
-    </section>
-
-    <section class="logotype d-flex flex-row justify-content-center">
-      <div class="row">
-        <div class="col">
-          <a href=""><img src="img/yaz.png" alt=""></a>
-          <a href=""><img src="img/zil.png" alt=""></a>
-          <a href=""><img src="img/gaz.png" alt=""></a>
-          <a href=""><img src="img/isuzu.png" alt=""></a>
-          <a href=""><img src="img/nino.png" alt=""></a>
-          <a href=""><img src="img/foton.png" alt=""></a>
-          <a href=""><img src="img/zil.png" alt=""></a>
-          <a href=""><img src="img/yaz.png" alt=""></a>
         </div>
       </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+
+          <div class="d-flex flex-row justify-content-between">
+            <div class="special-offer">
+              <p>В наявності</p>
+            </div>
+            <div class="recommendation-heart">
+              <a href=""><img src="img/heart.svg" alt=""></a>
+            </div>
+          </div>
+
+          <img src="img/image 28.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HYUNDAI HD 78 з промтоварним фургоном</h5>
+            <p class="card-text">від 352 000₽</p>
+            <div class="d-flex flex-row justify-content-evenly">
+              <button>Открыть каталог</button>
+              <div class="loading d-flex flex-row justify-content-center">
+                <a href="" style="padding-left: 1rem; width: 8rem;">Отримати КП</a>
+                <a href=""><img src="img/loading.svg" alt=""></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+
+          <div class="d-flex flex-row justify-content-between">
+            <div class="special-offer">
+              <p>В наявності</p>
+            </div>
+            <div class="recommendation-heart">
+              <a href=""><img src="img/heart.svg" alt=""></a>
+            </div>
+          </div>
+
+          <img src="img/image 28.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HYUNDAI HD 78 з промтоварним фургоном</h5>
+            <p class="card-text">від 352 000₽</p>
+            <div class="d-flex flex-row justify-content-evenly">
+              <button>Открыть каталог</button>
+              <div class="loading d-flex flex-row justify-content-center">
+                <a href="" style="padding-left: 1rem; width: 8rem;">Отримати КП</a>
+                <a href=""><img src="img/loading.svg" alt=""></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="row">
+      <div class="col d-flex flex-row justify-content-center">
+        <h3>Новини</h3>
+      </div>
+    </div>
+
+    <div class="row d-flex flex-row justify-content-center">
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+
+
+          <img src="img/newsPicture.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-title">15.06.2021</p>
+            <p class="card-text">КАМАЗ готує конкурента ГАЗелі та Валдая (перші ФОТО)</p>
+
+            <div class="loading d-flex flex-row justify-content-center">
+              <a href="" style="padding-left: 1rem; width: 8rem;">Детальніше</a>
+              <a href=""><img src="img/arrowright.svg" alt=""></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+
+
+          <img src="img/newsPicture.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-title">15.06.2021</p>
+            <p class="card-text">КАМАЗ готує конкурента ГАЗелі та Валдая (перші ФОТО)</p>
+
+            <div class="loading d-flex flex-row justify-content-center">
+              <a href="" style="padding-left: 1rem; width: 8rem;">Детальніше</a>
+              <a href=""><img src="img/arrowright.svg" alt=""></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+
+
+          <img src="img/newsPicture.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-title">15.06.2021</p>
+            <p class="card-text">КАМАЗ готує конкурента ГАЗелі та Валдая (перші ФОТО)</p>
+
+            <div class="loading d-flex flex-row justify-content-center">
+              <a href="" style="padding-left: 1rem; width: 8rem;">Детальніше</a>
+              <a href=""><img src="img/arrowright.svg" alt=""></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+
+
+          <img src="img/newsPicture.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-title">15.06.2021</p>
+            <p class="card-text">КАМАЗ готує конкурента ГАЗелі та Валдая (перші ФОТО)</p>
+
+            <div class="loading d-flex flex-row justify-content-center">
+              <a href="" style="padding-left: 1rem; width: 8rem;">Детальніше</a>
+              <a href=""><img src="img/arrowright.svg" alt=""></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section class="logotype d-flex flex-row justify-content-center">
+    <div class="row">
+      <div class="col">
+        <a href=""><img src="img/yaz.png" alt=""></a>
+        <a href=""><img src="img/zil.png" alt=""></a>
+        <a href=""><img src="img/gaz.png" alt=""></a>
+        <a href=""><img src="img/isuzu.png" alt=""></a>
+        <a href=""><img src="img/nino.png" alt=""></a>
+        <a href=""><img src="img/foton.png" alt=""></a>
+        <a href=""><img src="img/zil.png" alt=""></a>
+        <a href=""><img src="img/yaz.png" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="question">
+    <div class="row d-flex flex-column align-items-center">
+
+      <div class="col d-flex flex-column align-items-center">
+        <h3>ЗАЛИШИЛИСЯ ПИТАННЯ?</h3>
+        <p>Залиште свої контактні дані, і ми передзвонимо вам найближчим часом></p>
+      </div>
+
+      <div class="col d-flex flex-column align-items-center">
+
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="Ім'я">
+          <label for=" floatingInput">Ім'я</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="номер телефону">
+          <label for="floatingPassword">Номер телефону</label>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button>Відправити</button>
+        </div>
+
+        <p>Натискаючи на кнопку відправити Ви погоджуєтесь на обробку Ваших персональних даних компанія ТОВ «Рустрак»
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
