@@ -291,6 +291,9 @@ footer{
     color: rgb(63, 60, 60);
 }
 
+footer .col{
+    margin-bottom: 2rem;
+}
 footer button{
     width: 10rem;
     height: 2.5rem;
